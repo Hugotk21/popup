@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Popups</title>
+    <link herf="popup.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p>POPUPBOXES</p>
+    <script>
+      Name = window.prompt("What's your name?");
+      Place = window.prompt("Place");
+      Date = window.prompt("Date");
+      number = window.prompt("Phone");
+
+      let msg =
+        "<p style='color:black;'>" +
+        Name +
+        "  " +
+        Place +
+        "  " +
+        Date +
+        "  " +
+        number;
+
+      document.write(msg);
+
+      console.log(msg);
+    </script>
+
+    <fieldset>
+      <legend>JavaScript Popup Boxes exampel</legend>
+
+      <input type="button" oneclick="alert('testing')" value="show alert box" />
+      <input
+        type="button"
+        oneclick="promt('type something')"
+        value="show alert box"
+      />
+      <input
+        type="button"
+        oneclick="comfirm('OK or Cancel?')"
+        value="show alert box"
+      />
+    </fieldset>
+  </body>
+</html>
